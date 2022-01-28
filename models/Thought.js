@@ -21,7 +21,12 @@ const ReactionSchema = new Schema(
             default: Date.now,
             get: createdAtVal => dateFormat(createdAtVal)
         }
-    }
+    },
+    {
+		toJSON: {
+			getters: true
+		}
+	}
 );
 
 const ThoughtSchema = new Schema(
@@ -41,7 +46,14 @@ const ThoughtSchema = new Schema(
             required: true
         },
         reactions: [ReactionSchema]
-    }
+    },
+    {
+		toJSON: {
+			virtuals: true,
+			getters: true
+		},
+        id: false
+	}
 );
 
 ThoughtSchema.virtual('reactionCount').get(function () {
