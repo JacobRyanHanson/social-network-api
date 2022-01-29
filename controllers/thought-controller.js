@@ -23,7 +23,7 @@ const thoughtController = {
             .then(data => {
                 console.error(data)
                 if (!data) {
-                    res.status(404).json({ message: 'No thought found with this id!' });
+                    res.status(404).json({ message: 'No user found with this id!' });
                     return;
                 }
                 res.json(data);
@@ -71,7 +71,7 @@ const thoughtController = {
             })
             .then(data => {
                 if (!data) {
-                    res.status(404).json({ message: 'No thought found with this id!' });
+                    res.status(404).json({ message: 'No user found with this id!' });
                     return;
                 }
                 res.json(data);
