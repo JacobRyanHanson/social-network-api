@@ -26,4 +26,4 @@ Note: All commands that need to be run from the terminal in the root directory.
 Note: Routes can be found in the routes directory (examples in walkthrough).
 
 ### Walkthrough Video
-
+https://user-images.githubusercontent.com/89164466/151638968-e8d05f9f-e4f9-44cb-b806-34292b41be20.mp4
